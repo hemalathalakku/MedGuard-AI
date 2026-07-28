@@ -1,0 +1,13 @@
+<%--  Dark footer shared by every page (Module 15) with the medical disclaimer.  --%>
+<footer class="mg-footer mt-auto py-4">
+  <div class="container text-center">
+    <div class="fw-bold mb-1"><i class="bi bi-shield-plus"></i> MedGuard AI</div>
+    <div class="small opacity-75 mb-2">Intelligent Medicine Safety &amp; Drug Interaction Detection</div>
+    <div class="small opacity-50">
+      MedGuard AI is an educational project and does not provide medical advice.
+      Always consult a qualified doctor or pharmacist before taking any medicine.
+    </div>
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="${pageContext.request.contextPath}/js/app.js"></script>

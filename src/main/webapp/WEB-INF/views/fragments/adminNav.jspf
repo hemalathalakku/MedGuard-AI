@@ -1,0 +1,23 @@
+<%--  Navbar shared by every ADMIN page.  --%>
+<nav class="navbar navbar-expand-lg navbar-dark mg-navbar-admin sticky-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="${pageContext.request.contextPath}/admin/dashboard">
+      <i class="bi bi-shield-lock"></i> MedGuard Admin
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="nav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="${pageContext.request.contextPath}/admin/dashboard">Dashboard</a></li>
+        <li class="nav-item"><a class="nav-link" href="${pageContext.request.contextPath}/admin/users">Users</a></li>
+        <li class="nav-item"><a class="nav-link" href="${pageContext.request.contextPath}/admin/medicines">Medicines</a></li>
+        <li class="nav-item"><a class="nav-link" href="${pageContext.request.contextPath}/admin/diseases">Diseases</a></li>
+        <li class="nav-item"><a class="nav-link" href="${pageContext.request.contextPath}/admin/interactions">Interactions</a></li>
+        <li class="nav-item"><a class="nav-link" href="${pageContext.request.contextPath}/admin/warnings">Warnings</a></li>
+        <li class="nav-item"><a class="nav-link" href="${pageContext.request.contextPath}/admin/reports">Reports</a></li>
+        <li class="nav-item"><a class="nav-link text-warning" href="${pageContext.request.contextPath}/logout">Logout</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>

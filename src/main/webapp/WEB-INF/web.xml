@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Deployment descriptor for Tomcat 10 (Jakarta EE 10 schema).
+  Servlets in later modules will register themselves with @WebServlet
+  annotations, so this file mainly defines the welcome page and
+  session timeout.
+-->
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee
+                             https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
+         version="6.0">
+
+    <display-name>MedGuard AI</display-name>
+
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+
+    <!-- User is logged out automatically after 30 minutes of inactivity -->
+    <session-config>
+        <session-timeout>30</session-timeout>
+    </session-config>
+</web-app>

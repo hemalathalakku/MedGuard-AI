@@ -1,0 +1,72 @@
+/* ============================================================
+   MedGuard AI - Healthcare theme (Module 15)
+   Palette: medical blue (#0d6efd family) + health green (#198754)
+   ============================================================ */
+
+:root {
+  --mg-blue:  #0b5ed7;
+  --mg-blue-dark: #083b8c;
+  --mg-green: #198754;
+  --mg-bg:    #f2f7fb;
+}
+
+body.mg-body       { background: var(--mg-bg); }
+body.mg-auth-bg    { background: linear-gradient(135deg, #0b5ed7 0%, #198754 100%); }
+body.mg-auth-bg-admin { background: linear-gradient(135deg, #6f1d1b 0%, #0b5ed7 100%); }
+
+/* ---------- navbars ---------- */
+.mg-navbar        { background: linear-gradient(90deg, var(--mg-blue-dark), var(--mg-blue)); }
+.mg-navbar-admin  { background: linear-gradient(90deg, #4a0e0e, #8c2f2f); }
+
+/* ---------- hero ---------- */
+.mg-hero {
+  min-height: 62vh;
+  background: linear-gradient(135deg, rgba(8,59,140,.94), rgba(25,135,84,.88)),
+              radial-gradient(circle at 20% 20%, #ffffff22, transparent 40%);
+}
+
+/* ---------- glassmorphism cards ---------- */
+.mg-glass {
+  background: rgba(255, 255, 255, .72);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, .5);
+  border-radius: 1rem;
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+.mg-glass:hover { transform: translateY(-2px); box-shadow: 0 .6rem 1.4rem rgba(11, 94, 215, .12); }
+
+/* ---------- dashboard stat widgets ---------- */
+.mg-widget {
+  border: 0;
+  border-radius: 1rem;
+  background: #fff;
+  border-left: .35rem solid var(--mg-blue);
+  transition: transform .15s ease;
+}
+.mg-widget:hover { transform: translateY(-2px); }
+
+/* ---------- safety result banners ---------- */
+.mg-result-safe    { background: #e9f9f0; border-radius: 1rem; }
+.mg-result-caution { background: #fff8e1; border-radius: 1rem; }
+.mg-result-danger  { background: #fdecec; border-radius: 1rem; animation: mg-pulse 1.2s ease-in-out 3; }
+@keyframes mg-pulse { 0%,100% { box-shadow: 0 0 0 0 rgba(220,53,69,.35); }
+                      50%      { box-shadow: 0 0 0 12px rgba(220,53,69,0); } }
+
+/* ---------- dark footer ---------- */
+.mg-footer { background: #0c1a2b; color: #e6eefc; }
+
+/* ---------- autocomplete dropdown ---------- */
+#acBox .list-group-item { cursor: pointer; }
+#acBox .list-group-item:hover { background: var(--mg-bg); }
+
+/* ---------- loading spinner overlay ---------- */
+#mgSpinner {
+  position: fixed; inset: 0; z-index: 2000;
+  background: rgba(255,255,255,.6);
+  display: none; align-items: center; justify-content: center;
+}
+#mgSpinner.show { display: flex; }
+
+/* ---------- toast container ---------- */
+#mgToasts { position: fixed; bottom: 1rem; right: 1rem; z-index: 2100; }

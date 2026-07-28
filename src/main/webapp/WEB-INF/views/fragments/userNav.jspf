@@ -1,0 +1,23 @@
+<%--  Navbar shared by every USER page.  --%>
+<nav class="navbar navbar-expand-lg navbar-dark mg-navbar sticky-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="${pageContext.request.contextPath}/user/dashboard">
+      <i class="bi bi-shield-plus"></i> MedGuard AI
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="nav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="${pageContext.request.contextPath}/user/dashboard"><i class="bi bi-speedometer2"></i> Dashboard</a></li>
+        <li class="nav-item"><a class="nav-link" href="${pageContext.request.contextPath}/user/medicines"><i class="bi bi-search"></i> Medicines</a></li>
+        <li class="nav-item"><a class="nav-link" href="${pageContext.request.contextPath}/user/current"><i class="bi bi-capsule"></i> My Medicines</a></li>
+        <li class="nav-item"><a class="nav-link" href="${pageContext.request.contextPath}/user/diseases"><i class="bi bi-heart-pulse"></i> Health Profile</a></li>
+        <li class="nav-item"><a class="nav-link" href="${pageContext.request.contextPath}/user/reminders"><i class="bi bi-alarm"></i> Reminders</a></li>
+        <li class="nav-item"><a class="nav-link" href="${pageContext.request.contextPath}/user/history"><i class="bi bi-clock-history"></i> History</a></li>
+        <li class="nav-item"><a class="nav-link" href="${pageContext.request.contextPath}/user/profile"><i class="bi bi-person-circle"></i> ${sessionScope.userName}</a></li>
+        <li class="nav-item"><a class="nav-link text-warning" href="${pageContext.request.contextPath}/logout"><i class="bi bi-box-arrow-right"></i> Logout</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
