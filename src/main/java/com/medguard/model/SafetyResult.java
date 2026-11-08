@@ -1,4 +1,4 @@
-```java
+
 package com.medguard.model;
 
 import java.util.ArrayList;
@@ -48,4 +48,3 @@ public class SafetyResult {
         return String.join("\n", reasons);
     }
 }
-```
