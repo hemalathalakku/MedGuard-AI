@@ -1,4 +1,4 @@
-```java
+
 package com.medguard.service;
 
 import com.medguard.dao.*;
@@ -134,4 +134,3 @@ public class SafetyService {
         }
     }
 }
-```
